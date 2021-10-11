@@ -33,8 +33,7 @@
       .card::before, .card::after {
         backface-visibility: hidden;
         display: flex;
-        flex-direction: column;
-//         justify-content: center;
+        justify-content: center;
         line-height: 0;
         overflow: hidden;
         position: absolute;
@@ -44,8 +43,7 @@
 
       .card::before {
         content: attr(data-front);
-//         align-items: end;
-        justify-content: end;
+        align-items: end;
         background-color: rgb(44, 44, 68);
         background-image: radial-gradient(clamp(3px, 0.5vw, 6px) circle at 0 100%, rgb(26, 26, 36) 100%, transparent 100%),
                           radial-gradient(clamp(3px, 0.5vw, 6px) circle at 100% 100%, rgb(26, 26, 36) 100%, transparent 100%);
@@ -55,8 +53,7 @@
 
       .card::after {
         content: attr(data-back);
-//         align-items: start;
-        justify-content: start;
+        align-items: start;
         background-color: rgb(52, 54, 79);
         background-image: radial-gradient(clamp(3px, 0.5vw, 6px) circle at 0 0, rgb(26, 26, 36) 100%, transparent 100%),
                           radial-gradient(clamp(3px, 0.5vw, 6px) circle at 100% 0, rgb(26, 26, 36) 100%, transparent 100%);
