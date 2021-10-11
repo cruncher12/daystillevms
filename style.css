@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root {
+  --grayish-blue: hsl(237, 18%, 59%);
+  --soft-red: hsl(345, 95%, 68%);
+  --dark-desaturated-blue: hsl(236, 21%, 26%);
+  --very-dark-blue: hsl(235, 16%, 14%);
+  --mostly-black-blue: hsl(234, 17%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body {
+  background-image: url("images/pattern-hills.svg"),
+                    url("images/bg-stars.svg"),
+                    linear-gradient(rgb(30, 30, 40), rgb(37, 29, 44));
+  background-position: bottom right -210px, top right, top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  color: white;
+  font-size: clamp(18px, 3.16vw, 22px);
+  letter-spacing: 8px;
+  margin-top: 140px;
+  margin-bottom: clamp(50px, 6.94vw, 100px);
+}
+
+h1 > i {
+  font-size: inherit;
+}
+
+footer {
+  padding: clamp(48px, 9vw, 72px);
+}
+
+footer a {
+  margin: 0 16px;
+}
+
+footer a > img:hover {
+  filter: brightness(0) saturate(100%) invert(54%) sepia(14%) saturate(5228%) hue-rotate(310deg) brightness(101%) contrast(97%);
+}
+
+vertical-flip-card {
+  display: block;
+  margin-bottom: clamp(15px, 3vw, 30px);
+  height: clamp(67px, 10.4vw * 0.9452, 140px);
+  width: clamp(70px, 10.4vw, 150px);
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.count {
+  margin: clamp(8px, 1.5vw, 15px);
+}
+
+.count > span {
+  color: var(--grayish-blue);
+  font-size: clamp(7px, 0.97vw, 14px);
+  letter-spacing: 3px;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-position: bottom right, top right, top;
+  }
+}
