@@ -23,7 +23,7 @@ body {
                     linear-gradient(rgb(30, 30, 40), rgb(37, 29, 44));
   background-position: bottom right -210px, top right, top;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: auto, cover;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -83,5 +83,11 @@ vertical-flip-card {
 @media screen and (min-width: 376px) {
   body {
     background-position: bottom right, top right, top;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: contain, cover;
   }
 }
