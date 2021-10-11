@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/exenestecnico/fm-launch-countdown/](https://github.com/exenestecnico/fm-launch-countdown/)
+- Live Site URL: [https://exenestecnico.github.io/fm-launch-countdown/](https://exenestecnico.github.io/fm-launch-countdown/)
 
 ## My process
 
